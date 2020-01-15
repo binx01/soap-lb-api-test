@@ -1,0 +1,14 @@
+{
+  "name": "soaptest",
+  "connector": "soap",
+  "url": "http://localhost:8000/soapserver",
+  "wsdl": "http://localhost:8000/soapserver?wsdl",
+  "remotingEnabled": true,
+  "operations": {
+    "login": {
+      "service": "SoapService",
+      "port": "SoapService_Port",
+      "operation": "Login"
+    }
+  }
+}
