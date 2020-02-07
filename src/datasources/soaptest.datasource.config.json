@@ -1,8 +1,8 @@
 {
   "name": "soaptest",
   "connector": "soap",
-  "url": "http://localhost:8000/soapserver",
-  "wsdl": "http://localhost:8000/soapserver?wsdl",
+  "url": "http://localhost:8000",
+  "wsdl": "http://localhost:8000/wsdl",
   "remotingEnabled": true,
   "operations": {
     "login": {
