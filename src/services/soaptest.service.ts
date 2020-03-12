@@ -10,7 +10,7 @@ export interface LoginResponse {
   };
 }
 
-export interface LoginParameters {
+export interface LoginRequest {
   User: string;
   Password: string;
 }
@@ -19,7 +19,7 @@ export interface SoapTestService {
   // this is where you define the Node.js methods that will be
   // mapped to REST/SOAP/gRPC operations as stated in the datasource
   // json file.
-  login(args: LoginParameters): Promise<LoginResponse>;
+  login(args: LoginRequest): Promise<LoginResponse>;
 }
 
 export class SoapTestServiceProvider implements Provider<SoapTestService> {

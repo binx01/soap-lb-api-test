@@ -7,7 +7,7 @@ import {get, param} from '@loopback/rest';
 
 import {
   SoapTestService,
-  LoginParameters,
+  LoginRequest,
   LoginResponse,
 } from '../services/soaptest.service';
 
@@ -22,7 +22,7 @@ export class SoapTestController {
     @param.path.string('user') User: string,
     @param.path.string('password') Password: string,
   ): Promise<LoginResponse> {
-    return this.soapTestService.login(<LoginParameters>{
+    return this.soapTestService.login(<LoginRequest>{
       User,
       Password,
     });
