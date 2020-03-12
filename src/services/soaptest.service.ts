@@ -4,7 +4,9 @@ import {SoapTestDataSource} from '../datasources';
 
 export interface LoginResponse {
   result: {
-    value: string;
+    result: {
+      $value: string;
+    };
   };
 }
 
